@@ -94,7 +94,7 @@ body {
 .header__noti {
     display: none;
     position: absolute;
-    top: 200%;
+    top: 180%;
     right: 0;
     width: 350px;
     font-size: var(--noti-font-size);
@@ -123,8 +123,8 @@ body {
     border-style: solid;
     border-color: transparent transparent var(--div-color) transparent;
     position: absolute;
-    top: -20px;
-    right: 20px;
+    top: -18px;
+    right: 28px;
 }
 
 .header__noti-header {
@@ -148,20 +148,12 @@ body {
     text-decoration: none;
     color: var(--main-text-color);
     border-bottom: 1px solid rgba(104, 104, 104, 0.267);
-    background: var(--noti-color);
 }
 
 .header__noti-c-item:hover {
-    background: #ffede7;
+    background: #f3f3f3;
 }
 
-.header__noti-c-item:visited {
-    background: #fff;
-}
-
-.header__noti-c-item:visited:hover {
-    background: #ffede7;
-}
 
 .header__noti-item {
     display: flex;
@@ -169,15 +161,19 @@ body {
 
 .header__noti-item img {
     width: auto;
+    max-width: 40px;
     height: 40px;
+    object-fit: cover;
 }
 
 .header__noti-content {
     margin: auto 0 auto 15px;
 }
 
-.header__noti-date {
-    font-size: calc(var(--header-font-size) - 2px);
+.header__noti-detail {
+    font-size: calc(var(--header-font-size) - 5px);
+    font-weight: 300;
+    color: #b1b1b1
 }
 
 /* style Xem tat ca */
@@ -192,6 +188,7 @@ body {
 
 .header__noti-see-all:hover {
     text-decoration: underline;
+    background: #f3f3f3;
 }
 
 /* ------------ HEADER MAIN ------------ */
@@ -257,6 +254,9 @@ body {
     left: -2px;
     background: #fff;
     border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    -webkit-box-shadow: var(--box-shadow);
+    -moz-box-shadow: var(--box-shadow);
 }
 
 /* Chi su dung :focus voi .header__search-history khi ca 2 cung nam chung 1 the */
