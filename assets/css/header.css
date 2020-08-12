@@ -1,0 +1,337 @@
+body {
+    background: var(--background-color);
+}
+
+.header {
+    height: var(--header-height);
+    background: linear-gradient(0deg, var(--main-color), var(--sub-color));
+}
+
+/* ------------ TOP HEADER ----------- */
+
+.header__top {
+    display: flex;
+    height: var(--header-top-height);
+    padding: 8px 0 5px 0;
+    justify-content: space-between;
+    color: var(--header-text-color);
+}
+
+.header__top-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.header__top-item {
+    position: relative;
+    padding: 0 5px;
+    font-size: var(--header-font-size);
+}
+
+.header__top-item--border {
+    border-right: 1.5px solid rgba(255, 255, 255, 0.5);
+}
+
+.header__link {
+    text-decoration: none;
+    color: var(--header-text-color);
+}
+
+.header__link:hover, .header__top-item:hover {
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+}
+
+/* header icon */
+
+.header__top .fab {
+    font-size: 1.8rem;
+    margin: 0 3px;
+    color: var(--header-text-color);
+}
+
+/* chon 2 li cuoi cua div thu 2 (Dang ky, dang nhap) */
+
+.header__top--list:nth-child(2) div:nth-last-of-type(-n+2) {
+    font-weight: 500;
+}
+
+/* ---- QR Code ---- */
+
+.header__qr {
+    display: none;
+    position: absolute;
+    padding: 5px;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    border-radius: 5px;
+    background: var(--header-text-color);
+}
+
+.header__qr-container:hover .header__qr {
+    display: block;
+    transform-origin: 20px top;
+    animation: fadeIn, growth ease-in 0.15s;
+}
+
+.header__qr-qrcode {
+    width: 150px;
+}
+
+.header__qr-apps {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.apps-img {
+    height: 14px;
+}
+
+/* ---- Notification ---- */
+
+.header__noti {
+    display: none;
+    position: absolute;
+    top: 200%;
+    right: 0;
+    width: 350px;
+    font-size: var(--noti-font-size);
+    font-weight: bold;
+    background: var(--div-color, #fff);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.header__c-noti:hover .header__noti {
+    display: flex;
+    flex-direction: column;
+    transform-origin: calc(100% - 20px) top;
+    z-index: 1;
+    animation: fadeIn, growth ease-in 0.15s;
+    -webkit-animation: fadeIn, growth ease-in 0.15s;
+    -ms-animation: fadeIn, growth ease-in 0.15s;
+    -moz-animation: fadeIn, growth ease-in 0.15s;
+    -o-animation: fadeIn, growth ease-in 0.15s;
+}
+
+/* tool tip up */
+
+.header__noti::before {
+    content: "";
+    border-width: 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent var(--div-color) transparent;
+    position: absolute;
+    top: -20px;
+    right: 20px;
+}
+
+.header__noti-header {
+    padding: 10px 0 5px;
+    text-align: center;
+    color: var(--main-text-color);
+    background: transparent;
+    border-bottom: 1px solid rgba(104, 104, 104, 0.267);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+
+.header__noti-header:hover {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.header__noti-c-item {
+    padding: 10px;
+    font-weight: 500;
+    text-decoration: none;
+    color: var(--main-text-color);
+    border-bottom: 1px solid rgba(104, 104, 104, 0.267);
+    background: var(--noti-color);
+}
+
+.header__noti-c-item:hover {
+    background: #ffede7;
+}
+
+.header__noti-c-item:visited {
+    background: #fff;
+}
+
+.header__noti-c-item:visited:hover {
+    background: #ffede7;
+}
+
+.header__noti-item {
+    display: flex;
+}
+
+.header__noti-item img {
+    width: auto;
+    height: 40px;
+}
+
+.header__noti-content {
+    margin: auto 0 auto 15px;
+}
+
+.header__noti-date {
+    font-size: calc(var(--header-font-size) - 2px);
+}
+
+/* style Xem tat ca */
+
+.header__noti-see-all {
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+    color: var(--main-text-color);
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+}
+
+.header__noti-see-all:hover {
+    text-decoration: underline;
+}
+
+/* ------------ HEADER MAIN ------------ */
+
+.header__main {
+    display: flex;
+    align-items: center;
+    height: var(--header-main-height);
+}
+
+/* ---- Logo --- */
+
+.header__logo {
+    margin: 0 20px 0 0;
+}
+
+.svg-shopee-logo {
+    width: 150px;
+}
+
+/* ---- Search ---- */
+
+.header__c-search {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header__search {
+    flex: 1;
+    display: flex;
+    padding: 3px;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+
+.header__c-form {
+    width: 100%;
+    position: relative;
+}
+
+.header__input {
+    width: 100%;
+    height: 25px;
+    padding: 3px 0 0 3px;
+    font-size: calc(var(--header-font-size) + 2px);
+    border: none;
+}
+
+.header__input:focus {
+    outline: none;
+}
+
+/* Searh history */
+
+.header__search-history {
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 95%;
+    top: 125%;
+    left: -2px;
+    background: #fff;
+    border-radius: var(--border-radius);
+}
+
+/* Chi su dung :focus voi .header__search-history khi ca 2 cung nam chung 1 the */
+
+.header__input:focus~.header__search-history {
+    visibility: visible;
+}
+
+.header__title--history {
+    padding: 10px 8px;
+    color: #d4d4d4;
+}
+
+.header__link--history {
+    padding: 5px 8px;
+    color: var(--main-text-color);
+}
+
+.header__link--history:hover {
+    color: var(--main-text-color);
+    background: #f1f1f1
+}
+
+/* Search button */
+
+.header__btn {
+    min-width: 50px;
+    max-width: 100px;
+    border: none;
+    background: var(--main-color);
+}
+
+.header__btn:hover {
+    background: var(--hover-main-color);
+    cursor: pointer;
+}
+
+.header__btn:focus {
+    outline: none;
+}
+
+.fa-search {
+    margin: auto;
+    font-size: 2rem;
+    color: #fff;
+}
+
+/* ---- Suggestion ---- */
+
+.header__suggestion {
+    height: var(--header-font-size);
+    margin: 8px 0 0 0;
+    overflow: hidden;
+}
+
+.header__suggestion--link {
+    margin-right: 2px;
+}
+
+.header__suggestion--link:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* ---- Shopping Cart ---- */
+
+.header__cart {
+    display: flex;
+    width: 150px;
+    height: 100%;
+    align-items: center;
+}
+
+.header__cart .fa-shopping-cart {
+    margin: auto;
+    color: #fff;
+    font-size: 3rem;
+}
