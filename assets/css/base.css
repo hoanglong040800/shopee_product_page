@@ -66,6 +66,19 @@ p {
     font-weight: 400;
 }
 
+.btn{
+    width: 100px;
+    height: 30px;
+    font-weight: 500;
+    border: none;
+    border-radius: 3px;
+}
+
+.btn:hover{
+    outline: none;
+    cursor: pointer;
+}
+
 /* Animation */
 
 :root {
