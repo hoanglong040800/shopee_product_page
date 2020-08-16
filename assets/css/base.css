@@ -16,7 +16,8 @@
 :root {
     --header-font-size: 12px;
     --main-font-size: 14px;
-    --aside-font-size: 16px;
+    --aside-font-size: 12px;
+    --aside-heading-font-size: 15px;
     --footer-font-size: 14px;
     --noti-font-size: 12px;
 }
@@ -131,11 +132,9 @@ html {
     width: 100%;
 }
 
-.grid__row{
+.grid__row {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -12px;
-    margin-right: -12px;
 }
 
 .grid__column {
@@ -143,14 +142,12 @@ html {
     flex-wrap: wrap;
 }
 
-.grid__column-2{
+.grid__column-2 {
     width: 16.667%;
-   padding-left: 12px;
-   padding-right: 12px;
+    padding: 0 12px 0 0px;
 }
 
-.grid__column-10{
+.grid__column-10 {
     width: 83.333%;
-   padding-left: 12px;
-   padding-right: 12px;
+    padding: 0 0px 0 12px;
 }
