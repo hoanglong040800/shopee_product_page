@@ -1,6 +1,4 @@
-body {
-    background: var(--background-color);
-}
+
 
 .header {
     height: var(--header-height);

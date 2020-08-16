@@ -1,0 +1,13 @@
+body {
+    background: var(--background-color);
+}
+
+/* ======== ASIDE filter panel ======== */
+
+.icon-filter {
+    width: 20px;
+}
+
+
+
+/* filter group */

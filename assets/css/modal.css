@@ -95,7 +95,7 @@
 }
 
 .btn--secondary{
-    margin: 0 0 0 10px;
+    margin: 0 10px 0 0;
     padding: 3px 0 0 0;
     background: #f3f3f3;
 }
@@ -111,7 +111,7 @@
 }
 
 .btn--primary:hover {
-    background: var(--hover-main-color);
+    background: var(--sub-color);
 }
 
 /* -- Socials -- */
@@ -170,8 +170,12 @@
 
 /* Forgot password, Need Help */
 
-.auth__form-aside .need-help {
-    color: #999;
+.link--forgot-psswd{
+    color: var(--sub-color);
+}
+
+.link--help{
+    color: #d4d4d4;
     margin-left: 10px;
 }
 

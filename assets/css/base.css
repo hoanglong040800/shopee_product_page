@@ -66,7 +66,7 @@ p {
     font-weight: 400;
 }
 
-.btn{
+.btn {
     width: 100px;
     height: 30px;
     font-weight: 500;
@@ -74,9 +74,13 @@ p {
     border-radius: 3px;
 }
 
-.btn:hover{
+.btn:hover {
     outline: none;
     cursor: pointer;
+}
+
+.link {
+    text-decoration: none;
 }
 
 /* Animation */
@@ -115,6 +119,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* Responsive */
+
 .grid {
     max-width: 1200px;
     width: 100%;
@@ -125,7 +131,26 @@ html {
     width: 100%;
 }
 
-.grid-coloumn {
+.grid__row{
     display: flex;
     flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__column-2{
+    width: 16.667%;
+   padding-left: 12px;
+   padding-right: 12px;
+}
+
+.grid__column-10{
+    width: 83.333%;
+   padding-left: 12px;
+   padding-right: 12px;
 }
