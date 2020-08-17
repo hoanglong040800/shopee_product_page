@@ -47,7 +47,7 @@ body {
     fill: var(--sub-color);
 }
 
-.category-item:hover .icon-right-arrow{
+.category-item:hover .icon-right-arrow {
     visibility: visible;
 }
 
@@ -73,6 +73,139 @@ body {
     flex-direction: column;
 }
 
-.filter-checkbox__item{
+.filter-checkbox__item {
     padding: 3px 0;
+}
+
+.filter-checkbox__item:hover {
+    cursor: pointer;
+}
+
+/* ---------- COLUMN 10 --------- */
+
+.sort-bar-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 0 5px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* ----- Sort bar ----- */
+
+.sort-bar {
+    display: flex;
+}
+
+.sort-bar__heading {
+    margin: auto;
+    padding: 8px 10px;
+}
+
+.sort-bar__item {
+    margin: 4px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    background: #fff;
+}
+
+.sort-bar__item:hover {
+    background: #fafafa;
+    cursor: pointer;
+}
+
+.sort-bar__item--active {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.icon-down-arrow {
+    width: 10px;
+}
+
+/* dropdown menu */
+
+.sort-bar-dropdown {
+    position: relative;
+}
+
+.sort-bar__item--dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+
+.sort-bar__item--dropdown:hover .dropdown__menu {
+    visibility: visible;
+}
+
+.dropdown__menu {
+    visibility: hidden;
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 100%;
+    padding: 8px 10px;
+    background: #fff;
+    border-radius: 3px;
+}
+
+.dropdown__item {
+    margin: 5px 0;
+}
+
+.dropdown__item:hover {
+    color: var(--sub-color);
+    cursor: pointer;
+}
+
+/* ----- Page controller ------ */
+
+.page-controller__number {
+    color: var(--main-color);
+}
+
+.page-controller span:nth-child(2) {
+    margin-right: 8px;
+}
+
+.page-controller__btn {
+    padding: 4px 8px;
+    border: 1px solid #fafafa;
+    background: #fff;
+}
+
+.page-controller__btn--active:hover {
+    background: var(--main-color);
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.page-controller__btn--active:focus{
+    outline: none;
+}
+
+.page-controller__btn--active:hover .page-controller__icon{
+    fill: #fff;
+}
+
+.page-controller__btn--inactive {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.2);
+    cursor: auto;
+}
+
+.page-controller__btn--inactive .page-controller__icon {
+    fill: rgba(0, 0, 0, 0.2);
+}
+
+.page-controller__btn--inactive:hover {
+    cursor: default;
+}
+
+.page-controller__icon {
+    width: 5px;
 }
