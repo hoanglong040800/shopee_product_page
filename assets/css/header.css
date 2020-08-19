@@ -354,11 +354,8 @@
 /* header popup cart */
 
 .header__popup--cart {
-    
-}
-
-.header__popup--cart {
     width: 350px;
+    z-index: 1;
 }
 
 .header__popup--cart::before {
