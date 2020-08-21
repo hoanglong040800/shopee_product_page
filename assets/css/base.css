@@ -86,9 +86,9 @@ p {
 }
 
 .shadow-card {
-    -webkit-box-shadow: 0px 2px 0px 1px #e6e6e6;
-    -moz-box-shadow: 0px 2px 0px 1px #e6e6e6;
-    box-shadow: 0px 2px 0px 1px #e6e6e6
+    -webkit-box-shadow: 0px 1px 0px 0px #e6e6e6;
+    -moz-box-shadow: 0px 1px 0px 0px #e6e6e6;
+    box-shadow: 0px 1px 0px 0px #e6e6e6
 }
 
 .border-card{
@@ -146,6 +146,7 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+    margin: 0 -5px;
 }
 
 .grid__column {
@@ -155,18 +156,19 @@ html {
 
 .grid__column-2 {
     width: 16.667%;
-    padding: 0 12px 0 12px;
+    padding: 0 5px 0 5px;
+}
+
+.grid__column-2-4 {
+    width: 20%;
+    padding: 0 5px 0 5px;
+}
+
+.grid__column-margin{
+    margin: 5px 0;
 }
 
 .grid__column-10 {
     width: 83.333%;
-    padding: 0 12px 0 12px;
-}
-
-.grid__column-left {
-    padding-left: 0;
-}
-
-.grid__column-right {
-    padding-right: 0;
+    padding: 0 5px 0 5px;
 }

@@ -4,6 +4,7 @@ body {
 
 .main-container {
     padding-top: 30px;
+    font-size: 1.2rem;
 }
 
 /* -------- Filter panel ------- */
@@ -83,6 +84,8 @@ body {
 
 /* ---------- COLUMN 10 --------- */
 
+/* ----- Sort bar ----- */
+
 .sort-bar-wrapper {
     display: flex;
     justify-content: space-between;
@@ -93,10 +96,10 @@ body {
     background: rgba(0, 0, 0, 0.05);
 }
 
-/* ----- Sort bar ----- */
-
 .sort-bar {
     display: flex;
+    height: 100%;
+    padding: 5px;
 }
 
 .sort-bar__heading {
@@ -117,6 +120,11 @@ body {
 }
 
 .sort-bar__item--active {
+    color: #fff;
+    background: var(--main-color);
+}
+
+.sort-bar__item--active:hover {
     color: #fff;
     background: var(--main-color);
 }
@@ -212,6 +220,10 @@ body {
 
 /* ----------- Product Card ----------- */
 
+.home-product {
+    margin: 10px 0;
+}
+
 .product-card-container {
     text-decoration: none;
     font-size: var(--product-card-font-size);
@@ -219,30 +231,40 @@ body {
 }
 
 .product-card {
-    width: 200px;
-    height: 300px;
+    min-width: 180px;
+    min-height: 300px;
     background: #fff;
     border-radius: 3px;
-    
 }
 
 .product-card:hover {
-    transform: translateY(-1px);
-    -webkit-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.05);
-    -moz-box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.05);
-    box-shadow: 0px 0px 25px 12px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
+}
+
+.product-card__img-wrapper{
+    position: relative;
 }
 
 .product-card__img {
-    width: 200px;
-    height: auto;
+    width: 100%;
+    height: 200px;
     max-height: 200px;
     object-fit: contain;
 }
 
+.product-card__frame{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    z-index: 1;
+}
+
 /* Info detail */
-
-
 
 .product-card-info {
     height: 100px;
@@ -259,7 +281,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2px 0;
+    height: 15px;
+    margin: 2px 0;
 }
 
 .product-card__name {
@@ -286,7 +309,7 @@ body {
     stroke: #616161
 }
 
-.icon-like--active{
+.icon-like--active {
     fill: #f53d2f;
     stroke: #f53d2f;
 }
