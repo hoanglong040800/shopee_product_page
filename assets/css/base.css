@@ -1,6 +1,9 @@
+/* ======== BASE.CSS ========= */
+
 :root {
     --header-text-color: #fff;
     --main-text-color: #333;
+    --footer-text-color: #696969;
 }
 
 :root {
@@ -79,6 +82,10 @@ p {
 .btn:hover {
     outline: none;
     cursor: pointer;
+}
+
+button:focus{
+    outline: none;
 }
 
 .link {
@@ -171,4 +178,14 @@ html {
 .grid__column-10 {
     width: 83.333%;
     padding: 0 5px 0 5px;
+}
+
+.grid__column-8{
+    width: 66.667%;
+    padding: 0 5px 0 5px;
+}
+
+.grid__column-2-5{
+    width: 25%;
+    padding: 0 5px 0 5px
 }

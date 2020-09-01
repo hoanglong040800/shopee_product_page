@@ -1,3 +1,15 @@
+.disable {
+    display: none;
+}
+
+.header__signup:focus .modal.disable{
+    display: block;
+}
+
+.header__signup:focus .auth.disable{
+    display: block;
+}
+
 .modal {
     position: fixed;
     top: 0;
@@ -163,10 +175,6 @@
 }
 
 /* ---- LOGIN ---- */
-
-.disable {
-    display: none;
-}
 
 /* Forgot password, Need Help */
 

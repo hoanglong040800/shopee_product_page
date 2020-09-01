@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/assets/css/base.css">
     <link rel="stylesheet" href="/assets/css/header.css">
     <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/footer.css">
     <link rel="stylesheet" href="/assets/css/modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -55,15 +56,15 @@
                                         alt="apps-store">
                                 </a>
                             </div>
-                        </div> <!-- header__qr -->
+                        </div> <!-- QR code -->
                     </div>
 
                     <div class="header__top-item">
-                        <a href="#" class="header__link">
+                        <a href="" class="header__link">
                             <i class="fab fa-facebook"></i>
                         </a>
 
-                        <a href="#" class="header__link">
+                        <a href="" class="header__link">
                             <i class="fab fa-instagram"></i>
                         </a>
                     </div>
@@ -133,8 +134,8 @@
                         </a>
                     </div>
 
-                    <div class="header__top-item header__top-item--border""> Đăng Ký</div>
-                    <div class=" header__top-item"> Đăng Nhập</div>
+                    <div class="header__top-item header__top-item--border header__signup"> Đăng Ký</div>
+                    <div class=" header__top-item header__login"> Đăng Nhập</div>
                 </div> <!-- right nav -->
 
             </nav> <!-- header__top -->
@@ -405,7 +406,7 @@
                                         </path>
                                     </svg>
 
-                                    <div class="dropdown__menu">
+                                    <div class="dropdown__menu border-card">
                                         <div class="dropdown__item"> Tăng dần</div>
                                         <div class="dropdown__item"> Giảm dần</div>
                                     </div>
@@ -417,7 +418,7 @@
                                 <span> /100 </span>
 
                                 <button class="page-controller__btn page-controller__btn--inactive">
-                                    <svg class="page-controller__icon" viewBox="0 0 7 11">
+                                    <svg class="icon-page-controller" viewBox="0 0 7 11">
                                         <path
                                             d="M4.694078 9.8185598L.2870824 5.4331785c-.1957415-.1947815-.1965198-.511363-.0017382-.7071046a.50867033.50867033 0 0 1 .000868-.0008702L4.7381375.2732784 4.73885.273991c.1411545-.127878.3284279-.205779.5338961-.205779.4393237 0 .7954659.3561422.7954659.7954659 0 .2054682-.077901.3927416-.205779.5338961l.0006632.0006632-.0226101.0226101a.80174653.80174653 0 0 1-.0105706.0105706L2.4680138 4.7933195c-.1562097.1562097-.1562097.4094757 0 .5656855a.45579485.45579485 0 0 0 .0006962.0006944l3.3930018 3.3763607-.0009482.0009529c.128869.1413647.2074484.3293723.2074484.5357331 0 .4393237-.3561422.7954659-.7954659.7954659-.2049545 0-.391805-.077512-.5328365-.2048207l-.0003877.0003896-.0097205-.0096728a.80042023.80042023 0 0 1-.0357234-.0355483z"
                                             fill-rule="nonzero">
@@ -426,7 +427,7 @@
                                 </button>
 
                                 <button class="page-controller__btn page-controller__btn--active">
-                                    <svg class="page-controller__icon" viewBox="0 0 7 11">
+                                    <svg class="icon-page-controller" viewBox="0 0 7 11">
                                         <path
                                             d="M2.305922 9.81856l4.4069956-4.385381c.1957415-.194782.1965198-.511364.0017382-.707105a.26384055.26384055 0 0 0-.000868-.00087L2.2618625.273278 2.26115.273991C2.1199955.146113 1.9327221.068212 1.7272539.068212c-.4393237 0-.7954659.356142-.7954659.795466 0 .205468.077901.392741.205779.533896l-.0006632.000663.0226101.02261c.0034906.003557.0070143.00708.0105706.010571L4.5319862 4.79332c.1562097.156209.1562097.409475 0 .565685-.0002318.000232-.0004639.000463-.0006962.000694L1.1382882 8.73606l.0009482.000953c-.128869.141365-.2074484.329372-.2074484.535733 0 .439324.3561422.795466.7954659.795466.2049545 0 .391805-.077512.5328365-.204821l.0003877.00039.0097205-.009673c.012278-.011471.0241922-.023327.0357234-.035548z"
                                             fill-rule="nonzero">
@@ -959,7 +960,7 @@
                                         <div class="product-card shadow-card">
                                             <div class="product-card__img-wrapper">
                                                 <img class="product-card__img"
-                                                    src="https://lh3.googleusercontent.com/proxy/nxe_zJlnW4Sts7vvp7NvdqGHEueEbjXVwkCvUQv2OaRpacdN866M4DOP6W38ugvmKG-3kkWbqecaVrgP9pzOVAgvQd38rnuw4dSysHP7nExy3n2V0pXBT9s"
+                                                    src="data:image/jpeg;base64,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"
                                                     alt="asus-strix -g531">
                                             </div>
 
@@ -970,7 +971,7 @@
                                                     <div class="product-card-detail__row">
                                                         <span class="product-card__price">
                                                             <span class="product-card__price-old"> 18.890.000đ</span>
-                                                            <span class="product-card__price-new"> 15.990.000đ</span>
+                                                            <span class="product-card__price-new"> 17.990.000đ</span>
                                                         </span>
 
 
@@ -1061,8 +1062,644 @@
 
                                                     <div class="product-card-detail__row">
                                                         <span class="product-card__like">
-                                                            <svg class="icon-like--active" viewBox="0 0 16 16" width="16"
+                                                            <svg class="icon-like--active" viewBox="0 0 16 16"
+                                                                width="16" version="1.1">
+                                                                <path
+                                                                    d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__location"> Hà Nội</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- product card -->
+                                    </a> <!-- container -->
+                                </div>
+
+                                <!-- 2-1 -->
+                                <div class="grid__column-2-4 grid__column-margin">
+                                    <a href="" class="product-card-container">
+                                        <div class="product-card shadow-card">
+                                            <div class="product-card__img-wrapper">
+                                                <img class="product-card__img"
+                                                    src="https://cf.shopee.vn/file/e4671f7289daf7b85bb5d46b7f33d141_tn"
+                                                    alt="dell-g3-inspiron-3590">
+                                                <img class="product-card__frame"
+                                                    src="https://cf.shopee.vn/file/459b0afb3b4626293e64762ecfc22dbc"
+                                                    alt="freeship-xtra">
+                                            </div>
+
+                                            <div class="product-card-info">
+                                                <p class="product-card__name"> Dell G3 Inspiron 3590 i5 9530H 8GB
+                                                    GTX1050
+                                                    15.6"
+                                                    FHD IPS</p>
+
+                                                <div class="product-card-detail">
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__price">
+                                                            <span class="product-card__price-old"> 20.000.000đ</span>
+                                                            <span class="product-card__price-new"> 17.990.000đ</span>
+                                                        </span>
+
+
+                                                        <span class="product-card__free-shipping">
+                                                            <svg class="icon-free-shipping" height="12"
+                                                                viewBox="0 0 20 12" width="20">
+                                                                <g fill="none" fill-rule="evenodd" transform="">
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9"
+                                                                        rx="1" width="12" x="4"></rect>
+                                                                    <rect height="8" rx="1" stroke="#00bfa5" width="11"
+                                                                        x="4.5" y=".5">
+                                                                    </rect>
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7"
+                                                                        rx="1" width="7" x="13" y="2"></rect>
+                                                                    <rect height="6" rx="1" stroke="#00bfa5" width="6"
+                                                                        x="13.5" y="2.5">
+                                                                    </rect>
+                                                                    <circle cx="8" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <path
+                                                                        d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                        fill="#fff"></path>
+                                                                    <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <circle cx="8" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__rating">
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star icon-rating-star--nofill"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__sale"> Đã bán 15</span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__like">
+                                                            <svg class="icon-like icon-like--active" viewBox="0 0 16 16"
+                                                                width="16" version="1.1">
+                                                                <path
+                                                                    d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__location"> TP. Hồ Chí Minh</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- product card -->
+                                    </a> <!-- container -->
+                                </div>
+
+                                <!-- 2-2 -->
+                                <div class="grid__column-2-4 grid__column-margin">
+                                    <a href="" class="product-card-container">
+                                        <div class="product-card shadow-card">
+                                            <div class="product-card__img-wrapper">
+                                                <img class="product-card__img"
+                                                    src="https://cf.shopee.vn/file/b969d06991425af07af183b530c4254c_tn"
+                                                    alt="laptop-thinkpad-t440">
+                                            </div>
+
+                                            <div class="product-card-info">
+                                                <p class="product-card__name"> Laptop ThinkPad T440 i5 4300 | 8GB | SSD
+                                                    128GB</p>
+
+                                                <div class="product-card-detail">
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__price">
+                                                            <span class="product-card__price-old"></span>
+                                                            <span class="product-card__price-new"> 6.400.000đ</span>
+                                                        </span>
+
+
+                                                        <span class="product-card__free-shipping disable">
+                                                            <svg class="icon-free-shipping" height="12"
+                                                                viewBox="0 0 20 12" width="20">
+                                                                <g fill="none" fill-rule="evenodd" transform="">
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9"
+                                                                        rx="1" width="12" x="4"></rect>
+                                                                    <rect height="8" rx="1" stroke="#00bfa5" width="11"
+                                                                        x="4.5" y=".5">
+                                                                    </rect>
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7"
+                                                                        rx="1" width="7" x="13" y="2"></rect>
+                                                                    <rect height="6" rx="1" stroke="#00bfa5" width="6"
+                                                                        x="13.5" y="2.5">
+                                                                    </rect>
+                                                                    <circle cx="8" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <path
+                                                                        d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                        fill="#fff"></path>
+                                                                    <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <circle cx="8" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__rating disable">
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star icon-rating-star--nofill"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__sale"></span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__like">
+                                                            <svg class="icon-like" viewBox="0 0 16 16" width="16"
                                                                 version="1.1">
+                                                                <path
+                                                                    d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__location"> Bình Dương</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- product card -->
+                                    </a> <!-- container -->
+                                </div>
+
+                                <!-- 2-3 -->
+                                <div class="grid__column-2-4 grid__column-margin">
+                                    <a href="" class="product-card-container">
+                                        <div class="product-card shadow-card">
+                                            <div class="product-card__img-wrapper">
+                                                <img class="product-card__img"
+                                                    src="https://cf.shopee.vn/file/6990c4ed4962a16e7eaa62a96b363d6e"
+                                                    alt="dell-inspiron-3543">
+                                                <img class="product-card__frame"
+                                                    src="https://cf.shopee.vn/file/b4be67a00285d0efb2d869cfb0aa1f16"
+                                                    alt="re-vo-dich">
+                                            </div>
+
+                                            <div class="product-card-info">
+                                                <p class="product-card__name"> Dell Inspiron 3543 i5 5200U 4GB HDD 500GB
+                                                </p>
+
+                                                <div class="product-card-detail">
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__price">
+                                                            <span class="product-card__price-old"></span>
+                                                            <span class="product-card__price-new"> 6.200.000đ</span>
+                                                        </span>
+
+
+                                                        <span class="product-card__free-shipping disable">
+                                                            <svg class="icon-free-shipping" height="12"
+                                                                viewBox="0 0 20 12" width="20">
+                                                                <g fill="none" fill-rule="evenodd" transform="">
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9"
+                                                                        rx="1" width="12" x="4"></rect>
+                                                                    <rect height="8" rx="1" stroke="#00bfa5" width="11"
+                                                                        x="4.5" y=".5">
+                                                                    </rect>
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7"
+                                                                        rx="1" width="7" x="13" y="2"></rect>
+                                                                    <rect height="6" rx="1" stroke="#00bfa5" width="6"
+                                                                        x="13.5" y="2.5">
+                                                                    </rect>
+                                                                    <circle cx="8" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <path
+                                                                        d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                        fill="#fff"></path>
+                                                                    <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <circle cx="8" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__rating disable">
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star icon-rating-star--nofill"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__sale"></span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__like">
+                                                            <svg class="icon-like" viewBox="0 0 16 16" width="16"
+                                                                version="1.1">
+                                                                <path
+                                                                    d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__location"> Nghệ An</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- product card -->
+                                    </a> <!-- container -->
+                                </div>
+
+                                <!-- 2-4 -->
+                                <div class="grid__column-2-4 grid__column-margin">
+                                    <a href="" class="product-card-container">
+                                        <div class="product-card shadow-card">
+                                            <div class="product-card__img-wrapper">
+                                                <img class="product-card__img"
+                                                    src="data:image/jpeg;base64,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"
+                                                    alt="hp-zbook-studio-g5">
+                                                <img class="product-card__frame"
+                                                    src="https://cf.shopee.vn/file/4fbd2489c48cf38dff9b16c3d44469cc"
+                                                    alt="freeship-hoantien-xtra">
+                                            </div>
+
+                                            <div class="product-card-info">
+                                                <p class="product-card__name"> HP ZBook Studio G5 máy trạm lịnh lãm,
+                                                    mạnh mẽ
+                                                </p>
+
+                                                <div class="product-card-detail">
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__price">
+                                                            <span class="product-card__price-old"></span>
+                                                            <span class="product-card__price-new"> 31.990.000đ</span>
+                                                        </span>
+
+
+                                                        <span class="product-card__free-shipping">
+                                                            <svg class="icon-free-shipping" height="12"
+                                                                viewBox="0 0 20 12" width="20">
+                                                                <g fill="none" fill-rule="evenodd" transform="">
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9"
+                                                                        rx="1" width="12" x="4"></rect>
+                                                                    <rect height="8" rx="1" stroke="#00bfa5" width="11"
+                                                                        x="4.5" y=".5">
+                                                                    </rect>
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7"
+                                                                        rx="1" width="7" x="13" y="2"></rect>
+                                                                    <rect height="6" rx="1" stroke="#00bfa5" width="6"
+                                                                        x="13.5" y="2.5">
+                                                                    </rect>
+                                                                    <circle cx="8" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <path
+                                                                        d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                        fill="#fff"></path>
+                                                                    <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <circle cx="8" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__rating">
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__sale"> Đã bán 5</span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__like">
+                                                            <svg class="icon-like--active" viewBox="0 0 16 16"
+                                                                width="16" version="1.1">
+                                                                <path
+                                                                    d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
+                                                                </path>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__location"> Phú Nhuận</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div> <!-- product card -->
+                                    </a> <!-- container -->
+                                </div>
+
+                                <!-- 2-5 -->
+                                <div class="grid__column-2-4 grid__column-margin">
+                                    <a href="" class="product-card-container">
+                                        <div class="product-card shadow-card">
+                                            <div class="product-card__img-wrapper">
+                                                <img class="product-card__img"
+                                                    src="data:image/jpeg;base64,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"
+                                                    alt="asus-strix -g531">
+                                            </div>
+
+                                            <div class="product-card-info">
+                                                <p class="product-card__name"> Laptop Asus Strix G531</p>
+
+                                                <div class="product-card-detail">
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__price">
+                                                            <span class="product-card__price-old"> 18.890.000đ</span>
+                                                            <span class="product-card__price-new"> 17.990.000đ</span>
+                                                        </span>
+
+
+                                                        <span class="product-card__free-shipping disable">
+                                                            <svg class="icon-free-shipping" height="12"
+                                                                viewBox="0 0 20 12" width="20">
+                                                                <g fill="none" fill-rule="evenodd" transform="">
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="9"
+                                                                        rx="1" width="12" x="4"></rect>
+                                                                    <rect height="8" rx="1" stroke="#00bfa5" width="11"
+                                                                        x="4.5" y=".5">
+                                                                    </rect>
+                                                                    <rect fill="#00bfa5" fill-rule="evenodd" height="7"
+                                                                        rx="1" width="7" x="13" y="2"></rect>
+                                                                    <rect height="6" rx="1" stroke="#00bfa5" width="6"
+                                                                        x="13.5" y="2.5">
+                                                                    </rect>
+                                                                    <circle cx="8" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#00bfa5" r="2">
+                                                                    </circle>
+                                                                    <path
+                                                                        d="m6.7082481 6.7999878h-.7082481v-4.2275391h2.8488017v.5976563h-2.1405536v1.2978515h1.9603297v.5800782h-1.9603297zm2.6762505 0v-3.1904297h.6544972v.4892578h.0505892c.0980164-.3134765.4774351-.5419922.9264138-.5419922.0980165 0 .2276512.0087891.3003731.0263672v.6210938c-.053751-.0175782-.2624312-.038086-.3762568-.038086-.5122152 0-.8758247.3017578-.8758247.75v1.8837891zm3.608988-2.7158203c-.5027297 0-.8536919.328125-.8916338.8261719h1.7390022c-.0158092-.5009766-.3446386-.8261719-.8473684-.8261719zm.8442065 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187zm2.6224996-1.8544922c-.5027297 0-.853692.328125-.8916339.8261719h1.7390022c-.0158091-.5009766-.3446386-.8261719-.8473683-.8261719zm.8442064 1.8544922h.6544972c-.1549293.571289-.7050863.9228515-1.49238.9228515-.9864885 0-1.5903965-.6269531-1.5903965-1.6464843 0-1.0195313.6165553-1.6669922 1.5872347-1.6669922.9580321 0 1.5366455.6064453 1.5366455 1.6083984v.2197266h-2.4314412v.0351562c.0221328.5595703.373095.9140625.9169284.9140625.4110369 0 .6924391-.1376953.8189119-.3867187z"
+                                                                        fill="#fff"></path>
+                                                                    <path d="m .5 8.5h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <path d="m0 10.15674h3.5v1h-3.5z" fill="#00bfa5">
+                                                                    </path>
+                                                                    <circle cx="8" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                    <circle cx="15" cy="10" fill="#047565" r="1">
+                                                                    </circle>
+                                                                </g>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__rating disable">
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+
+                                                            <svg class="icon-rating-star icon-rating-star--nofill"
+                                                                enable-background="new 0 0 15 15" viewBox="0 0 15 15"
+                                                                x="0" y="0">
+                                                                <polygon
+                                                                    points="7.5 .8 9.7 5.4 14.5 5.9 10.7 9.1 11.8 14.2 7.5 11.6 3.2 14.2 4.3 9.1 .5 5.9 5.3 5.4"
+                                                                    stroke-linecap="round" stroke-linejoin="round"
+                                                                    stroke-miterlimit="10"></polygon>
+                                                            </svg>
+                                                        </span>
+
+                                                        <span class="product-card__sale"></span>
+                                                    </div>
+
+                                                    <div class="product-card-detail__row">
+                                                        <span class="product-card__like">
+                                                            <svg class="icon-like--active" viewBox="0 0 16 16"
+                                                                width="16" version="1.1">
                                                                 <path
                                                                     d="m7.251221 4.2145388c-.549143-.4552525-1.2488781-.7145388-1.951221-.7145388-1.5719593 0-2.8 1.2269253-2.8 2.7970027 0 .5878515.158291 1.1598348.483492 1.7618948.6414654 1.1875754 1.5644044 2.1358244 4.4829309 4.7799304l.5348542.4864596.5326254-.4807607c2.9306205-2.660747 3.8471674-3.6039919 4.486777-4.7931984.3223805-.5993922.4793205-1.1689848.4793205-1.7543257 0-1.5700774-1.2280407-2.7970027-2.8-2.7970027-.7029148 0-1.4032175.2597087-1.9497845.7133288l-.0367779.0309601c-.1203966.1029087-.2318185.2143106-.3329071.3329122l-.3805305.4464557-.3805305-.4464557c-.1010886-.1186016-.2125105-.2300035-.3301434-.3305672z">
                                                                 </path>
@@ -1081,6 +1718,37 @@
 
                         </div> <!-- home product -->
 
+                        <!-- Pagination -->
+                        <div class="pagination">
+                            <button class="pagination__btn">
+                                <svg class="icon-page-controller icon-page-controller--pagination" viewBox="0 0 7 11">
+                                    <path
+                                        d="M4.694078 9.8185598L.2870824 5.4331785c-.1957415-.1947815-.1965198-.511363-.0017382-.7071046a.50867033.50867033 0 0 1 .000868-.0008702L4.7381375.2732784 4.73885.273991c.1411545-.127878.3284279-.205779.5338961-.205779.4393237 0 .7954659.3561422.7954659.7954659 0 .2054682-.077901.3927416-.205779.5338961l.0006632.0006632-.0226101.0226101a.80174653.80174653 0 0 1-.0105706.0105706L2.4680138 4.7933195c-.1562097.1562097-.1562097.4094757 0 .5656855a.45579485.45579485 0 0 0 .0006962.0006944l3.3930018 3.3763607-.0009482.0009529c.128869.1413647.2074484.3293723.2074484.5357331 0 .4393237-.3561422.7954659-.7954659.7954659-.2049545 0-.391805-.077512-.5328365-.2048207l-.0003877.0003896-.0097205-.0096728a.80042023.80042023 0 0 1-.0357234-.0355483z"
+                                        fill-rule="nonzero">
+                                    </path>
+                                </svg>
+                            </button>
+
+                            <button class="pagination__btn pagination__btn--active"> 1</button>
+
+                            <button class="pagination__btn"> 2</button>
+
+                            <button class="pagination__btn"> 3</button>
+
+                            <button class="pagination__btn"> 4</button>
+
+                            <button class="pagination__btn pagination__btn--etc"> ...</button>
+
+                            <button class="pagination__btn">
+                                <svg class="icon-page-controller icon-page-controller--pagination" viewBox="0 0 7 11">
+                                    <path
+                                        d="M2.305922 9.81856l4.4069956-4.385381c.1957415-.194782.1965198-.511364.0017382-.707105a.26384055.26384055 0 0 0-.000868-.00087L2.2618625.273278 2.26115.273991C2.1199955.146113 1.9327221.068212 1.7272539.068212c-.4393237 0-.7954659.356142-.7954659.795466 0 .205468.077901.392741.205779.533896l-.0006632.000663.0226101.02261c.0034906.003557.0070143.00708.0105706.010571L4.5319862 4.79332c.1562097.156209.1562097.409475 0 .565685-.0002318.000232-.0004639.000463-.0006962.000694L1.1382882 8.73606l.0009482.000953c-.128869.141365-.2074484.329372-.2074484.535733 0 .439324.3561422.795466.7954659.795466.2049545 0 .391805-.077512.5328365-.204821l.0003877.00039.0097205-.009673c.012278-.011471.0241922-.023327.0357234-.035548z"
+                                        fill-rule="nonzero">
+                                    </path>
+                                </svg>
+                            </button>
+                        </div>
+
                     </div> <!-- (sort/product) -->
 
                 </div> <!-- grid row -->
@@ -1089,8 +1757,83 @@
 
 
         <!--------- FOOTER -------------->
-        <footer class="footer">
+        <footer>
+            <div class="grid footer-container">
 
+                <div class="grid__row">
+                    <div class="grid__column-2"></div>
+
+                    <div class="grid__column-8">
+                        <div class="main-footer">
+                            <div class="grid__column-2-5 main-footer-list">
+                                <h6 class="main-footer__heading"> CHĂM SÓC KHÁCH HÀNG</h6>
+                                <a href="" class="main-footer__link"> Trung Tâm Trợ Giúp</a>
+                                <a href="" class="main-footer__link"> Hướng Dẫn Bán Hàng</a>
+                                <a href="" class="main-footer__link"> Thanh Toán</a>
+                                <a href="" class="main-footer__link"> Vận Chuyển</a>
+                                <a href="" class="main-footer__link"> Chăm Sóc khách Hàng</a>
+                                <a href="" class="main-footer__link"> Chính Sách Bảo Hành</a>
+                            </div>
+
+                            <div class="grid__column-2-5 main-footer-list">
+                                <h6 class="main-footer__heading"> VỀ SHOPEE</h6>
+                                <a href="" class="main-footer__link"> Giới Thiệu</a>
+                                <a href="" class="main-footer__link"> Tuyển Dụng</a>
+                                <a href="" class="main-footer__link"> Điều khoản</a>
+                                <a href="" class="main-footer__link"> Chính sách Bảo Mật</a>
+                                <a href="" class="main-footer__link"> Liên Hệ Truyền Thông</a>
+                            </div>
+
+                            <div class="grid__column-2-5 main-footer-list">
+                                <h6 class="main-footer__heading"> THANH TOÁN</h6>
+                            </div>
+
+                            <div class="grid__column-2-5 main-footer-list">
+                                <h6 class="main-footer__heading"> THEO DÕI CHÚNG TÔI TRÊN</h6>
+
+                                <a href="" class="main-footer__link">
+                                    <i class="fab fa-facebook main-footer__icon"></i>
+                                    Facebook
+                                </a>
+
+                                <a href="" class="main-footer__link">
+                                    <i class="fab fa-instagram main-footer__icon"></i>
+                                    Instagram
+                                </a>
+
+                                <h6 class="main-footer__heading"> TẢI ỨNG DỤNG SHOPEE TẠI</h6>
+
+                                <div class="main-footer-app-container">
+                                    <img class="main-footer__qr-code"
+                                        src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/f184c0b68a2d385feb5d70a76396230b.png"
+                                        alt="qr-code">
+
+                                    <div class="main-footer-app">
+                                        <a href="" class="main-footer__link">
+                                            <img class="main-footer-app__img"
+                                                src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/2679f513b5f9e235adf2c6c288617e7b.png"
+                                                alt="google-play">
+                                        </a>
+
+                                        <a href="" class="main-footer__link">
+                                            <img class="main-footer-app__img"
+                                                src="https://deo.shopeemobile.com/shopee/shopee-pcmall-live-sg/assets/759416b55e2bd69ecc360ee2faab7ad0.png"
+                                                alt="apps-store">
+                                        </a>
+                                    </div>
+                                </div> <!-- app -->
+                            </div>
+                        </div> <!-- main footer -->
+                    </div> <!-- column 8 -->
+
+                    <div class="grid__column-2"></div>
+                </div> <!-- main footer -->
+
+                <div class="grid__row">
+
+                </div> <!-- certification -->
+
+            </div> <!-- grid -->
         </footer>
 
     </div> <!-- wrapper -->

@@ -1,3 +1,5 @@
+/* ======== MAIN.CSS ========= */
+
 body {
     background: var(--background-color);
 }
@@ -82,7 +84,7 @@ body {
     cursor: pointer;
 }
 
-/* ---------- COLUMN 10 --------- */
+/* ------------- COLUMN 10 ----------- */
 
 /* ----- Sort bar ----- */
 
@@ -159,6 +161,7 @@ body {
     padding: 8px 10px;
     background: #fff;
     border-radius: 3px;
+    z-index: 1;
 }
 
 .dropdown__item {
@@ -196,7 +199,7 @@ body {
     outline: none;
 }
 
-.page-controller__btn--active:hover .page-controller__icon {
+.page-controller__btn--active:hover .icon-page-controller {
     fill: #fff;
 }
 
@@ -206,7 +209,7 @@ body {
     cursor: auto;
 }
 
-.page-controller__btn--inactive .page-controller__icon {
+.page-controller__btn--inactive .icon-page-controller {
     fill: rgba(0, 0, 0, 0.2);
 }
 
@@ -214,8 +217,9 @@ body {
     cursor: default;
 }
 
-.page-controller__icon {
+.icon-page-controller {
     width: 5px;
+    fill: #757575;
 }
 
 /* ----------- Product Card ----------- */
@@ -242,6 +246,7 @@ body {
     -webkit-box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 0px 20px 12px rgba(0, 0, 0, 0.05);
+    z-index: 2;
 }
 
 .product-card__img-wrapper{
@@ -301,6 +306,14 @@ body {
     color: var(--sub-color);
 }
 
+.product-card__sale{
+    color: #757575;
+}
+
+.product-card__location{
+    color: #757575;
+}
+
 /* icon */
 
 .icon-like {
@@ -323,3 +336,36 @@ body {
 .icon-rating-star--nofill {
     fill: none;
 }
+
+/* ----- Pagination ----- */
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pagination__btn{
+    margin: 0 10px;
+    padding: 4px 10px;
+    font-size: 15px;
+    color: #757575;
+    background: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.pagination__btn--active{
+    color: #fff;
+    background: var(--main-color);
+}
+
+.pagination__btn--etc{
+    cursor: default;
+}
+
+.icon-page-controller--pagination{
+    width: 7px;
+}
+
